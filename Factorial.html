@@ -7,12 +7,32 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-        <h1>Calcular factorial de un numero</h1>
-        <p>Ingrese el numero:</p>
-        <input type="text" id="inputNumero">
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="analisis_home.html"><i class="bi bi-house"></i> Home </a>
+                </li>
+                <li>
+                    <a href="analisis_edad.html"><i class="bi bi-calendar"></i> Edad </a>
+                </li>
+                <li>
+                    <a href="Factorial.html"><i class="bi bi-calculator-fill"></i> Factorial </a>
+                </li>
+                <li>
+                    <a href="Palidromo.html"><i class="bi bi-file-earmark-word"></i> Palindromo </a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <center><span class="title">Calcular factorial de un numero</span>
+            <p class="parrafo">Ingrese el numero:</p>
+            <input type="text" id="inputNumero">
 
-        <button onclick=Factorial()>Calcular factorial</button>
-        <p id="resultado"><p>
+            <button onclick=Factorial()>Calcular factorial</button>
+            <p id="resultado"><p></center>
+            <center><button class="my-button" id="reset-btn">Reset</button></center>
+        </header>
+        
         
         <script src="javascript/script.js"></script>
     </body>
