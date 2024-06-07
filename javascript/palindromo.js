@@ -22,3 +22,8 @@ function verificarPalindromo() {
         document.getElementById("resultado").innerHTML = "<p class='text-danger'>La frase no es un palíndromo.</p>";
     }
 }
+
+document.getElementById('reset-btn').addEventListener('click', function () {
+    document.getElementById('inputFrase').value = '';
+    document.getElementById('resultado').innerText = '';
+});

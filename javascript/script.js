@@ -1,3 +1,12 @@
+document.getElementById('reset-btn').addEventListener('click', function () {
+    document.getElementById('inputNumero').value = '';
+    document.getElementById('resultado').innerText = '';
+});
+
+document.getElementById('inputNumero').addEventListener('input', function (e) {
+    e.target.value = e.target.value.replace(/[^0-9]/g, '');
+});
+
 function Factorial(){
 
     let num = document.getElementById("inputNumero").value;

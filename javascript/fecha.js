@@ -19,3 +19,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // Asigna la función calcularEdad al evento click del botón
     document.getElementById('calcular-btn').addEventListener('click', calcularEdad);
 });
+
+document.getElementById('reset-btn').addEventListener('click', function() {
+    document.getElementById('dia').value = '';
+    document.getElementById('mes').value = '';
+    document.getElementById('ano').value = '';
+    document.getElementById('resultado').innerText = '';
+});
