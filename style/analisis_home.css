@@ -109,3 +109,25 @@ footer p{
     color: var(--yt-red);
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a.active {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
